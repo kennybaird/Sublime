@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>comment</key>
+	<string>SNOMED</string>
+	<key>fileTypes</key>
+	<array>
+		<string>txt</string>
+	</array>
+	<key>firstLineMatch</key>
+	<string>^#!/usr/bin/env node</string>
+	<key>foldingStartMarker</key>
+	<string>^.*\bfunction\s*(\w+\s*)?\([^\)]*\)(\s*\{[^\}]*)?\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~J</string>
+	<key>name</key>
+	<string>SNOMED</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\.[0-9]+)?))\b</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(AND)\b</string>
+			<key>name</key>
+			<string>booleanand</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b(OR)\b</string>
+			<key>name</key>
+			<string>booleanor</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b(NOT)\b</string>
+			<key>name</key>
+			<string>booleannot</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b("\\|")\b</string>
+			<key>name</key>
+			<string>breaker</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b("\\{")\b</string>
+			<key>name</key>
+			<string>startofexp</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b("\\}")\b</string>
+			<key>name</key>
+			<string>endofexp</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\t</string>
+			<key>name</key>
+			<string>tabs</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Known absent)\b</string>
+			<key>name</key>
+			<string>absent</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Known present)\b</string>
+			<key>name</key>
+			<string>present</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b(Subject of record)\b</string>
+			<key>name</key>
+			<string>subjectrecord</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Substance)\b</string>
+			<key>name</key>
+			<string>substance</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Current or specified)\b</string>
+			<key>name</key>
+			<string>current</string>
+		</dict>
+				<dict>
+			<key>match</key>
+			<string>\b(Current or past)\b</string>
+			<key>name</key>
+			<string>currentorpast</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Situation with explicit context)\b</string>
+			<key>name</key>
+			<string>Situationwithexplicitcontext</string>
+		</dict>
+				<dict>
+			<key>match</key>
+			<string>\b(Temporal context)\b</string>
+			<key>name</key>
+			<string>Temporalcontext</string>
+		</dict>
+						<dict>
+			<key>match</key>
+			<string>\b(Finding context)\b</string>
+			<key>name</key>
+			<string>Findingcontext</string>
+		</dict>
+								<dict>
+			<key>match</key>
+			<string>\b(Subject relationship context)\b</string>
+			<key>name</key>
+			<string>Subjectrelationshipcontext</string>
+		</dict>
+			<dict>
+			<key>match</key>
+			<string>\b(Associated finding)\b</string>
+			<key>name</key>
+			<string>Associatedfinding</string>
+		</dict>
+					<dict>
+			<key>match</key>
+			<string>\b(Done)\b</string>
+			<key>name</key>
+			<string>Done</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(Associated finding\|=\d+\|[^|]++(?=\|)\|)</string>
+			<key>name</key>
+			<string>finding_simple</string>
+		</dict>
+		<dict>
+			<key>match</key>
+		<string>\b(Associated [\s\S]*?Subject)\b</string>
+			<key>name</key>
+			<string>finding_to_sub</string>
+		</dict>
+
+	</array>
+	<key>scopeName</key>
+	<string>source.js</string>
+	<key>uuid</key>
+	<string>93E017CC-6F27-11D9-90EB-000D93589AF6</string>
+</dict>
+</plist>
